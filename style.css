@@ -89,3 +89,14 @@ body {
     flex: 1;
 }
 
+.task-text.done {
+    text-decoration: line-through;
+    color: gray;
+  }
+
+.task-actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
