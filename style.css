@@ -70,3 +70,8 @@ body {
     padding-bottom: 6px;
 }
 
+.taskList {
+    max-width: 800px;
+    margin: auto;
+}
+
