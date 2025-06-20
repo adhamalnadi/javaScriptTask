@@ -32,4 +32,11 @@ body {
     margin-bottom: 10px;
   }
 
+  .inputGroup input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
   
