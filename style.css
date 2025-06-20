@@ -111,3 +111,11 @@ body {
     font-size: 18px;
 }
 
+.task-actions .edit {
+    color: orange;
+}
+
+.task-actions .delete {
+    color: red;
+}
+
