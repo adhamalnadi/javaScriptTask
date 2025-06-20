@@ -49,3 +49,14 @@ body {
     width: 100%;
 }
 
+.inputGroup button:hover{
+    background-color: #04505e;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    column-gap: 5%;
+    margin-bottom: 20px;
+}
+
