@@ -60,3 +60,13 @@ body {
     margin-bottom: 20px;
 }
 
+.filters button{
+    border: none;
+    color: white;
+    background-color: #0096B2;
+    padding-left: 13%;
+    padding-right: 13%;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
