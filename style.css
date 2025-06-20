@@ -119,3 +119,10 @@ body {
     color: red;
 }
 
+.bulk-actions {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
