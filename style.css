@@ -126,3 +126,12 @@ body {
     margin-top: 30px;
 }
 
+.bulk-actions button {
+    padding: 10px;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    flex: 1;
+}
