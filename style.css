@@ -100,3 +100,14 @@ body {
     gap: 10px;
 }
 
+.task-actions input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+.task-actions button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
