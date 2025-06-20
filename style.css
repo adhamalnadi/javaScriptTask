@@ -70,22 +70,3 @@ body {
     padding-bottom: 6px;
 }
 
-.taskList {
-    max-width: 800px;
-    margin: auto;
-}
-
-.task-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 5px;
-}
-
-.task-text {
-    flex: 1;
-}
-
