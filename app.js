@@ -60,3 +60,13 @@ function renderTasks() {
         taskList.appendChild(taskItem);
       });
     }
+
+function addTask() {
+      const input = document.getElementById("taskInput");
+      const text = input.value.trim();
+      if (text !== "") {
+        tasks.push({ text, done: false });
+        input.value = "";
+        renderTasks();
+      }
+    }
