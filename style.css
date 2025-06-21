@@ -1,20 +1,20 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    margin: 0;
-  }
-
-  h2{
-    text-align: center;
-    margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
 }
 
-.inputContainer{
-    padding-left: 20px;
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -25,21 +25,21 @@ body {
     border-radius: 5px;
 }
 
-.inputGroup{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
-  }
+.inputGroup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
 
-  .inputGroup input[type="text"] {
-    flex: 1;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+.inputGroup input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  .inputGroup button{
+.inputGroup button {
     border: none;
     color: white;
     background-color: #0096B2;
@@ -49,19 +49,19 @@ body {
     width: 100%;
 }
 
-.inputGroup button:hover{
-    background-color: #04505e;
+.inputGroup button:hover {
+  background-color: #04505e;
 }
 
-.filters{
-    display: flex;
-    justify-content: center;
-    column-gap: 5%;
-    margin-bottom: 20px;
+.filters {
+  display: flex;
+  justify-content: center;
+  column-gap: 5%;
+  margin-bottom: 20px;
 }
 
-.filters button{
-    border: none;
+.filters button {
+  border: none;
     color: white;
     background-color: #0096B2;
     padding-left: 13%;
@@ -70,68 +70,128 @@ body {
     padding-bottom: 6px;
 }
 
-.taskList {
-    max-width: 800px;
-    margin: auto;
+.task-list {
+  max-width: 800px;
+  margin: auto;
 }
 
 .task-item {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 8px;
-    border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
 }
 
 .task-text {
-    flex: 1;
+  flex: 1;
 }
 
 .task-text.done {
-    text-decoration: line-through;
-    color: gray;
-  }
+  text-decoration: line-through;
+  color: gray;
+}
 
 .task-actions {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .task-actions input[type="checkbox"] {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .task-actions button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
 }
 
 .task-actions .edit {
-    color: orange;
+  color: orange;
 }
 
 .task-actions .delete {
-    color: red;
+  color: red;
 }
 
 .bulk-actions {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
 }
 
 .bulk-actions button {
-    padding: 10px;
-    background-color: #dc3545;
-    color: white;
+  padding: 10px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  flex: 1;
+}
+
+.msg {
+  font-size: 0.85rem;
+  color: #d32f2f;
+  margin-top: -10px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: grid;
+  place-items: center;
+}
+
+.modal-content {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 320px;
+}
+
+.modal-content input {
+  width: 100%;
+  margin: 0.75rem 0;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: end;
+  gap: 0.5rem;
+}
+
+.confirmButton{
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    flex: 1;
+    border-radius: 8px;
+    color: white;
+    background-color: #0096B2;
+    padding-top: 6px;
+    padding-bottom: 6px;
+}
+
+.cancelButton{
+    border: none;
+    border-radius: 8px;
+    color: white;
+    background-color: #a4281a;
+    padding-top: 6px;
+    padding-bottom: 6px;
 }
