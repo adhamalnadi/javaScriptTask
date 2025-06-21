@@ -30,3 +30,14 @@ function renderTasks() {
           tasks[index].done = checkbox.checked;
           renderTasks();
         };
+
+        const editBtn = document.createElement("button");
+        editBtn.innerHTML = "✏️";
+        editBtn.className = "edit";
+        editBtn.onclick = () => {
+          const newText = prompt("Edit task:", task.text);
+          if (newText !== null) {
+            tasks[index].text = newText.trim();
+            renderTasks();
+          }
+        };
