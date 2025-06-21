@@ -80,3 +80,10 @@ function deleteDoneTasks() {
       tasks = tasks.filter(task => !task.done);
       renderTasks();
     }
+
+function deleteAllTasks() {
+      if (confirm("Are you sure you want to delete all tasks?")) {
+        tasks = [];
+        renderTasks();
+      }
+    }
