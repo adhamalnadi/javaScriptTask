@@ -9,3 +9,7 @@ function renderTasks() {
         if (filter === 'done') return task.done;
         if (filter === 'todo') return !task.done;
       });
+
+      filteredTasks.forEach((task, index) => {
+        const taskItem = document.createElement("div");
+        taskItem.className = "task-item";
