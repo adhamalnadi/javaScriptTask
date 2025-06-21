@@ -19,3 +19,6 @@ function renderTasks() {
         taskText.textContent = task.text;
 
         if (task.done) taskText.classList.add("done");
+
+        const actions = document.createElement("div");
+        actions.className = "task-actions";
