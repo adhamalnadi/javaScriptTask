@@ -70,3 +70,8 @@ function addTask() {
         renderTasks();
       }
     }
+
+function filterTasks(type) {
+      filter = type;
+      renderTasks();
+    }
