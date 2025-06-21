@@ -41,3 +41,11 @@ function renderTasks() {
             renderTasks();
           }
         };
+
+        const deleteBtn = document.createElement("button");
+        deleteBtn.innerHTML = "🗑️";
+        deleteBtn.className = "delete";
+        deleteBtn.onclick = () => {
+          tasks.splice(index, 1);
+          renderTasks();
+        };
