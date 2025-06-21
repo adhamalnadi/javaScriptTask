@@ -49,3 +49,14 @@ function renderTasks() {
           tasks.splice(index, 1);
           renderTasks();
         };
+
+        actions.appendChild(checkbox);
+        actions.appendChild(editBtn);
+        actions.appendChild(deleteBtn);
+
+        taskItem.appendChild(taskText);
+        taskItem.appendChild(actions);
+
+        taskList.appendChild(taskItem);
+      });
+    }
