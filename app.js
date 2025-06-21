@@ -87,3 +87,5 @@ function deleteAllTasks() {
         renderTasks();
       }
     }
+
+renderTasks();
