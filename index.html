@@ -1,37 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="./style.css" />
+  <title>Todo App</title>
 </head>
-
 <body>
-    <h2>TodoInput</h2>
-    <div class="inputContainer">
-        <div class="inputGroup">
-            <input type="text" id="taskInput" placeholder="Enter a new task">
-        </div>
-        <div class="inputGroup">
-            <button onclick="addTask()">Add new task</button>
-        </div>
+  <h2>Todo Input</h2>
+  <div class="inputContainer">
+    <div class="inputGroup">
+      <input type="text" id="taskInput" placeholder="Enter a new task" />
     </div>
-
-     <h2>Todo List</h2>
-    <div class="filters">
-        <button onclick="filterTasks('all')">All</button>
-        <button onclick="filterTasks('done')">Done</button>
-        <button onclick="filterTasks('todo')">Todo</button>
+    <p id="validationMsg" class="hidden msg"></p>
+    <div class="inputGroup">
+      <button onclick="handleAddTask()">Add new task</button>
     </div>
+  </div>
 
-    <div class="task-list" id="taskList"></div>
+  <h2>Todo List</h2>
+  <div class="filters">
+    <button onclick="filterTasks('all')">All</button>
+    <button onclick="filterTasks('done')">Done</button>
+    <button onclick="filterTasks('todo')">Todo</button>
+  </div>
 
-    <div class="bulk-actions"> 
-        <button onclick="deleteDoneTasks()">Delete Done Task</button>
-        <button onclick="deleteAllTasks()">Delete All Task</button>
+  <div class="task-list" id="taskList"></div>
+
+  <div class="bulk-actions">
+    <button onclick="deleteDoneTasks()">Delete Done Task</button>
+    <button onclick="handleDeleteAll()">Delete All Task</button>
+  </div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <h2 id="modalTitle"></h2>
+      <input type="text" id="modalInput" class="hidden" maxlength="100" />
+      <p id="modalMsg" class="msg"></p>
+      <div class="modal-actions">
+        <button onclick="modalConfirm()" class="confirmButton">Confirm</button>
+        <button onclick="closeModal()" class="cancelButton secondary">Cancel</button>
+      </div>
     </div>
+  </div>
 
-     <script src="./app.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
