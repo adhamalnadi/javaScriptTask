@@ -75,3 +75,8 @@ function filterTasks(type) {
       filter = type;
       renderTasks();
     }
+
+function deleteDoneTasks() {
+      tasks = tasks.filter(task => !task.done);
+      renderTasks();
+    }
