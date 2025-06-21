@@ -13,3 +13,9 @@ function renderTasks() {
       filteredTasks.forEach((task, index) => {
         const taskItem = document.createElement("div");
         taskItem.className = "task-item";
+
+        const taskText = document.createElement("div");
+        taskText.className = "task-text";
+        taskText.textContent = task.text;
+
+        if (task.done) taskText.classList.add("done");
