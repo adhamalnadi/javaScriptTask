@@ -91,7 +91,7 @@ h2 {
 
 .task-text.done {
   text-decoration: line-through;
-  color: gray;
+  color: red;
 }
 
 .task-actions {
